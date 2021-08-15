@@ -9,20 +9,20 @@ function PaginationButtons() {
     return (
         <div className="flex max-w-lg text-blue-700 m-10">
             {startIndex >= 10 && (
-                <Link href={`/search?term=${router.query.term}&start=${startIndex - 10}`}>
-                <div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
-                    <ChevronLeftIcon className="h-5 "/>
-                    <p>Previous</p>
-                </div>
+                <Link href={`/search?term=${router.query.term}&start=${startIndex - 10}`} passHref>
+                    <a><div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
+                        <ChevronLeftIcon className="h-5 "/>
+                        <p>Previous</p>
+                    </div></a>
                 
                 </Link>
             )}
 
-            <Link href={`/search?term=${router.query.term}&start=${startIndex + 10}`}>
-            <div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
+            <Link href={`/search?term=${router.query.term}&start=${startIndex + 10}`} passHref>
+            <a><div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
                 <ChevronRightIcon className="h-5 "/>
                 <p>Next</p>
-            </div>
+            </div></a>
             </Link>
 
             

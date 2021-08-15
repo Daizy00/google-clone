@@ -25,8 +25,8 @@ function Header() {
             height={40}
             width={120}
             onClick={() =>router.push("/")/* To go back to the main page and come back to the search page */
-
             }
+            alt='back'
             className="cursor-pointer"
             />
             <form className=" flex border border-gray-200 rounded-full shadow-lg max-w-3xl items-center flex-grow px-6 py-3 ml-10 mr-5">
