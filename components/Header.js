@@ -31,7 +31,9 @@ function Header() {
             />
             <form className=" flex border border-gray-200 rounded-full shadow-lg max-w-3xl items-center flex-grow px-6 py-3 ml-10 mr-5">
                 <input ref={searchInputRef}/* to grab the values of the search */ 
-                 className=" flex-grow w-full focus:outline-none" type="text" />
+                 className=" flex-grow w-full focus:outline-none" type="text" 
+                 defaultValue={router.query.term}
+                 />
                  <XIcon className=" h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
                  onClick={()=> (searchInputRef.current.value="")} /* on clicking icon the empty value assingned will clear the search box */ />
                  <MicrophoneIcon className=" h-6 mr-3 hidden sm:inline-flex cursor-pointer text-blue-500 border-l-2 pl-4 border-gray-300 transition duration-100 transform hover:scale-125"/>
