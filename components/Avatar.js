@@ -6,8 +6,8 @@ function Avatar({url,className}) {
         className={`rounded-full   cursor-pointer transition duration-150 transform hover:scale-110 ${className}`}
         src={url}
         alt="profile pic"
-        width='40px'
-        height='40px'
+        width={40}
+        height={40}
         />
             
         
