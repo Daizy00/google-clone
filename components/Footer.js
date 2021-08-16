@@ -12,7 +12,7 @@ function Footer() {
                 <div className="flex justify-center items-center md:col-span-2 lg:col-span-1 lg:col-start-2  ">
                 
                 
-                Carbon neutral since 2007
+                
 
             </div>
 
